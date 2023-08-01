@@ -131,7 +131,12 @@ export async function appRoutes(app: FastifyInstance) {
             cast(count(*) as float)
           FROM day_habits DH
           WHERE DH.day_id = D.id
-        ) as completed
+        ) as completed,
+        (
+          SELECT
+          cast(count(*) as float)
+          FROM habit_week_days HWD
+        ) as amount
       FROM days D
     `
 
