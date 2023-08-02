@@ -136,6 +136,8 @@ export async function appRoutes(app: FastifyInstance) {
           SELECT
           cast(count(*) as float)
           FROM habit_week_days HWD
+          WHERE
+            HWD.week_day = cast(strftime('%w', D.date/1000.0, 'unixepoch') as int)
         ) as amount
       FROM days D
     `
