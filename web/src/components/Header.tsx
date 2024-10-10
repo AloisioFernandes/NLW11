@@ -1,7 +1,7 @@
-import { Plus } from 'phosphor-react'
-import * as Dialog from '@radix-ui/react-dialog'
+import { Plus } from "phosphor-react";
+import * as Dialog from "@radix-ui/react-dialog";
 
-import logoImage from "../assets/logo.svg"
+import logoImage from "../assets/logo.svg";
 
 export function Header() {
   return (
@@ -20,11 +20,10 @@ export function Header() {
         <Dialog.Portal>
           <Dialog.Overlay />
 
-          <Dialog.Content>
-            Conteúdo
-          </Dialog.Content>
+          <Dialog.Content>Conteúdo do modal.</Dialog.Content>
         </Dialog.Portal>
       </Dialog.Root>
     </div>
   );
 }
+// 52:00
