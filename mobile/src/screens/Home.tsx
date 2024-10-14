@@ -55,4 +55,3 @@ export function Home() {
     </View>
   )
 }
-// 1:25:45
