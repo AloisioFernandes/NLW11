@@ -46,7 +46,7 @@ export function HabitDay({ completed, amount }: HabitDayProps) {
                 </Checkbox.Indicator>
               </div>
 
-              <span className="font-semibold text-xl text-white leading-tight">
+              <span className="font-semibold text-xl text-white leading-tight group-data-[state=checked]:line-through group-data-[state=checked]:text-zinc-400">
                 Beber 2L de água
               </span>
             </Checkbox.Root>
